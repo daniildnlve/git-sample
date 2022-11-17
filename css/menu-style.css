@@ -43,7 +43,7 @@ ul {
     border: 0;
     width: 40px;
     height: 40px;
-    background-image: url(/assets/icons/exit.svg);
+    background-image: url("../assets/icons/exit.svg");
     align-self: center;
     margin-right: 16.73px;
 }
@@ -63,7 +63,7 @@ ul {
     border: 0;
     width: 40px;
     height: 40px;
-    background-image: url(/assets/icons/search.svg);
+    background-image: url("../assets/icons/search.svg");
     align-self: center;
     margin-left: 78.73px;
 }
@@ -157,7 +157,7 @@ ul {
     border: 0;
     width: 40px;
     height: 40px;
-    background-image: url(/assets/icons/call.svg);
+    background-image: url("../assets/icons/call.svg");
     margin-right: 16px;
 }
 
@@ -166,7 +166,7 @@ ul {
     border: 0;
     width: 40px;
     height: 40px;
-    background-image: url(/assets/icons/chat.svg);
+    background-image: url("../assets/icons/chat.svg");
     margin-right: 16px;
 }
 
@@ -175,7 +175,7 @@ ul {
     border: 0;
     width: 40px;
     height: 40px;
-    background-image: url(/assets/icons/profile.svg);
+    background-image: url("../assets/icons/profile.svg");
 }
 
 .footer__email {

@@ -269,7 +269,7 @@ li {
     }
   
     .section-block__button p::before {
-      content: url(../assets/icons/icon.svg);
+      content: url("../assets/icons/icon.svg");
       margin-right: 16px;
     }
   

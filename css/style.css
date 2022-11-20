@@ -510,29 +510,7 @@ li {
         -ms-transform: scale(1.05);
             transform: scale(1.05);
   }
-  
-  .menu__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-  }
-
-  .menu__link img {
-    margin-left: 10px;
-  }
-
-  .menu__link:visited {
-    color: #1b1c21;
-  }
-
+    
   .menu__points {
     margin-top: 8.37px;
     margin-bottom: 40px;

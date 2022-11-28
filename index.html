@@ -12,150 +12,100 @@
     <header class="header">
       <div class="header__content">
         <div class="header__left-content">
-          <button
-            class="header__button header__burger"
-            aria-label="Меню"
-          ></button>
-          <div class="header__divider-left"></div>
-          <div class="header__logo">
-            <a href="#">
-              <img
-                src="assets/icons/Group.svg"
-                alt="Логотип"
-                width="96.55"
-                height="50.81"
-              />
-            </a>
-          </div>
+          <button class="header__button header__burger" aria-label="Меню">
+            <img src="assets/icons/burger.svg" />
+          </button>
+          <a class="header__logo" href="#">
+            <img src="assets/icons/Group.svg" alt="Логотип" />
+          </a>
         </div>
         <div class="header__right-content">
-          <button
-            class="header__button header__call"
-            aria-label="Звонок"
-          ></button>
+          <button class="header__button header__call" aria-label="Звонок">
+            <img src="assets/icons/call.svg" />
+          </button>
           <button
             class="header__button header__chat"
             aria-label="Обратная связь"
-          ></button>
+          >
+            <img src="assets/icons/chat.svg" />
+          </button>
           <button
             class="header__button header__profile"
             aria-label="Личный кабинет"
-          ></button>
-          <div class="header__divider"></div>
-          <button
-            class="header__button header__repair"
-            aria-label="Оставить заявку"
-          ></button>
-          <button
-            class="header__button header__status"
-            aria-label="Статус ремонта"
-          ></button>
+          >
+            <img src="assets/icons/profile.svg" />
+          </button>
+          <button class="repair header__button" aria-label="Оставить заявку">
+            <img src="assets/icons/repair.svg" />
+          </button>
+          <button class="status header__button" aria-label="Статус ремонта">
+            <img src="assets/icons/checkstatus.svg" />
+          </button>
         </div>
       </div>
     </header>
-    <section class="menu">
+    <div class="menu">
       <div class="menu__block">
         <h1 class="menu__title">Услуги и сервисы</h1>
         <div class="menu__buttons">
-          <button
-            class="menu__repair menu__button"
-            aria-label="Оставить заявку"
-          >
-            <p>Оставить заявку</p>
-            <img class="menu__button-icon" src="assets/icons/repair.svg" />
+          <button class="repair menu__button" aria-label="Оставить заявку">
+            <span class="button__label">Оставить заявку</span>
+            <img src="assets/icons/repair.svg" />
           </button>
-          <button class="menu__status menu__button" aria-label="Статус ремонта">
-            <p>Статус ремонта</p>
-            <img class="menu__button-icon" src="assets/icons/checkstatus.svg" />
+          <button class="status menu__button" aria-label="Статус ремонта">
+            <span class="button__label">Статус ремонта</span>
+            <img src="assets/icons/checkstatus.svg" />
           </button>
         </div>
       </div>
       <nav class="menu__navigation">
         <ul class="menu__points">
           <li>
-            <input
-              class="menu__checkbox"
-              id="check-1"
-              type="radio"
-              name="menu"
-              checked
-            />
-            <label for="check-1">Ремонтируемые устройства</label>
+            <a href="#">Ремонтируемые устройства</a>
           </li>
           <li>
-            <input
-              class="menu__checkbox"
-              id="check-2"
-              type="radio"
-              name="menu"
-            />
-            <label for="check-2">Дополнительные услуги</label>
+            <a href="#">Дополнительные услуги</a>
           </li>
           <li>
-            <input
-              class="menu__checkbox"
-              id="check-3"
-              type="radio"
-              name="menu"
-            />
-            <label for="check-3">Цены на услуги</label>
+            <a href="#">Цены на услуги</a>
           </li>
           <li>
-            <input
-              class="menu__checkbox"
-              id="check-4"
-              type="radio"
-              name="menu"
-            />
-            <label for="check-4">Адреса сервисных центров</label>
+            <a href="#">Адреса сервисных центров</a>
           </li>
           <li>
-            <input
-              class="menu__checkbox"
-              id="check-5"
-              type="radio"
-              name="menu"
-            />
-            <label for="check-5">Специальные цены</label>
+            <a href="#">Специальные цены</a>
           </li>
           <li>
-            <input
-              class="menu__checkbox"
-              id="check-6"
-              type="radio"
-              name="menu"
-            />
-            <label for="check-6">Отзывы</label>
+            <a href="#">Отзывы</a>
           </li>
         </ul>
-        <div class="menu__shadow"></div>
       </nav>
-    </section>
+    </div>
     <main>
       <section class="section-block">
-        <div class="section-block__text">
-          <p class="section-block__paragraph">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-          </p>
-
-          <p class="section-block__paragraph2">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера<span class="section-block__next"
-              >, что подтверждает большое количество постоянных клиентов. Мы
-              гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.</span>
-          </p>
+        <div class="section-block__content">
+          <div class="section-block__text">
+            <p class="section-block__paragraph">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="section-block__paragraph2">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера<span class="section-block__next"
+                >, что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.</span
+              >
+            </p>
+          </div>
           <button class="section-block__button" aria-label="Читать далее">
-            <p>Читать далее</p>
+            Читать далее
           </button>
         </div>
-        <img
-          class="section-block__image"
-          src="assets/images/cps.jpg"
-          alt="Фотография компании"
-        />
+        <div class="section-block__image">
+          <img src="assets/images/cps.jpg" alt="Фотография компании" />
+        </div>
       </section>
     </main>
   </body>

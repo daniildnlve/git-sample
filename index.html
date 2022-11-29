@@ -10,79 +10,73 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
-        <div class="header__left-content">
-          <button class="header__button header__burger" aria-label="Меню">
+      <ul class="header__content">
+        <li class="header__item">
+          <button class="header__burger" aria-label="Меню">
             <img src="assets/icons/burger.svg" alt="Меню" />
           </button>
-          <a class="header__logo" href="#">
+        </li>
+        <li class="header__item">
+          <a class="logo" href="#" aria-label="Логотип">
             <img src="assets/icons/Group.svg" alt="Логотип" />
           </a>
-        </div>
-        <div class="header__right-content">
-          <button class="header__button header__call" aria-label="Звонок">
+        </li>
+        <li class="header__item">
+          <button class="header__call" aria-label="Звонок">
             <img src="assets/icons/call.svg" alt="Звонок" />
           </button>
-          <button
-            class="header__button header__chat"
-            aria-label="Обратная связь"
-          >
+        </li>
+        <li class="header__item">
+          <button class="header__chat" aria-label="Обратная связь">
             <img src="assets/icons/chat.svg" alt="Обратная связь" />
           </button>
-          <button
-            class="header__button header__profile"
-            aria-label="Личный кабинет"
-          >
+        </li>
+        <li class="header__item">
+          <button class="header__profile" aria-label="Личный кабинет">
             <img src="assets/icons/profile.svg" alt="Личный кабинет" />
           </button>
-          <button class="repair header__button" aria-label="Оставить заявку">
+        </li>
+        <li class="header__item">
+          <button class="header__repair" aria-label="Оставить заявку">
             <img src="assets/icons/repair.svg" alt="Оставить заявку" />
           </button>
-          <button class="status header__button" aria-label="Статус ремонта">
+        </li>
+        <li class="header__item">
+          <button class="header__status" aria-label="Статус ремонта">
             <img src="assets/icons/checkstatus.svg" alt="Статус ремонта" />
           </button>
-        </div>
-      </div>
+        </li>
+      </ul>
     </header>
     <div class="menu">
       <div class="menu__block">
         <h1 class="menu__title">Услуги и сервисы</h1>
-        <div class="menu__buttons">
-          <button class="repair menu__button" aria-label="Оставить заявку">
-            <span class="button__label">Оставить заявку</span>
-            <img src="assets/icons/repair.svg" alt="Оставить заявку" />
-          </button>
-          <button class="status menu__button" aria-label="Статус ремонта">
-            <span class="button__label">Статус ремонта</span>
-            <img src="assets/icons/checkstatus.svg" alt="Статус ремонта" />
-          </button>
-        </div>
       </div>
       <nav class="menu__navigation">
         <ul class="menu__points">
-          <li>
-            <a href="#">Ремонтируемые устройства</a>
+          <li class="menu__item">
+            <a class="menu__point" href="#">Ремонтируемые устройства</a>
           </li>
-          <li>
-            <a href="#">Дополнительные услуги</a>
+          <li class="menu__item">
+            <a class="menu__point" href="#">Дополнительные услуги</a>
           </li>
-          <li>
-            <a href="#">Цены на услуги</a>
+          <li class="menu__item">
+            <a class="menu__point" href="#">Цены на услуги</a>
           </li>
-          <li>
-            <a href="#">Адреса сервисных центров</a>
+          <li class="menu__item">
+            <a class="menu__point" href="#">Адреса сервисных центров</a>
           </li>
-          <li>
-            <a href="#">Специальные цены</a>
+          <li class="menu__item">
+            <a class="menu__point" href="#">Специальные цены</a>
           </li>
-          <li>
-            <a href="#">Отзывы</a>
+          <li class="menu__item">
+            <a class="menu__point" href="#">Отзывы</a>
           </li>
         </ul>
       </nav>
     </div>
     <main>
-      <div class="section-block">
+      <section class="section-block">
         <div class="section-block__content">
           <div class="section-block__text">
             <p class="section-block__paragraph">
@@ -90,13 +84,11 @@
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
               официальной гарантией производителя.
             </p>
-            <p class="section-block__paragraph2">
+            <p class="section-block__paragraph">
               Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера<span class="section-block__next"
-                >, что подтверждает большое количество постоянных клиентов. Мы
-                гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.</span
-              >
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
             </p>
           </div>
           <button class="section-block__button" aria-label="Читать далее">
@@ -106,7 +98,7 @@
         <div class="section-block__image">
           <img src="assets/images/cps.jpg" alt="Фотография компании" />
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>

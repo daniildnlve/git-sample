@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
   padding: 0;
-  background: none;
-  border: 0;
   list-style-type: none;
 }
 
 body {
   font-family: "TT Lakes";
-  margin: 0 auto;
   background-color: #f8f8f8;
-  max-width: 1120px;
 }
 
 button {
   cursor: pointer;
   font-family: inherit;
+  background: none;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 0px) {
@@ -40,27 +42,9 @@ button {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-  }
-
-  .header__burger,
-  .header__call,
-  .header__chat,
-  .header__profile,
-  .header__repair,
-  .header__status {
-    width: 40px;
-    height: 40px;
-    background-color: #ff3e79;
-    border-radius: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-column-gap: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
   }
 
   .header__content::before {
@@ -88,39 +72,54 @@ button {
     flex-grow: 1;
   }
 
-  .header__burger {
-    margin-right: 16px;
-  }
-
-  .header__call {
-    margin-right: 16px;
-  }
-
-  .header__chat {
-    margin-right: 16px;
-  }
-
-  .header__profile {
-    margin-right: 42px;
-  }
-
-  .header__repair {
-    margin-right: 16px;
-  }
-
   .header__item:nth-child(3),
   .header__item:nth-child(4),
   .header__item:nth-child(5) {
     display: none;
   }
 
-  .logo img {
-    display: block;
+  .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
   }
 
-  .menu {
-    width: auto;
-    margin-top: 24px;
+  .icon__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #ff3e79;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .icon__text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1b1c21;
+    letter-spacing: -0.4px;
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    width: 98px;
+    height: 52px;
+  }
+
+  .logo img {
+    display: block;
   }
 
   .menu__title {
@@ -130,6 +129,7 @@ button {
     margin-left: 16px;
     line-height: 40px;
     letter-spacing: -0.6px;
+    padding-top: 24px;
   }
 
   .menu__title::before {
@@ -142,8 +142,14 @@ button {
     left: 0px;
   }
 
-  .menu__points {
+  .menu__navigation {
     overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .menu__points {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -152,9 +158,8 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 24px;
+    margin: 24px 16px;
     white-space: nowrap;
-    margin-bottom: 24px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -186,7 +191,7 @@ button {
     );
   }
 
-  .menu__points::-webkit-scrollbar {
+  .menu__navigation::-webkit-scrollbar {
     width: 0;
     height: 0;
   }
@@ -200,14 +205,6 @@ button {
     padding: 6px 14px;
     border: 2px solid transparent;
     display: block;
-  }
-
-  .menu__item:first-of-type {
-    margin-left: 16px;
-  }
-
-  .menu__item:last-of-type {
-    margin-right: 16px;
   }
 
   .menu__point:hover {
@@ -231,7 +228,6 @@ button {
     margin: 0 16px 16px 16px;
     font-size: 14px;
     color: #1b1c21;
-    line-height: 18px;
     letter-spacing: 0.2px;
   }
 
@@ -258,6 +254,7 @@ button {
     right: 0;
     left: 0;
     height: 1.2em;
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0), #f8f8f8 100%);
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0), #f8f8f8 100%);
     background: -webkit-gradient(
       linear,
@@ -306,17 +303,18 @@ button {
 
   .section-block__image {
     width: 100%;
-    height: 100%;
+    min-height: 165px;
+    max-height: 427px;
   }
 
-  .section-block__image img {
+  .section-block__img {
     width: 100%;
     height: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .page {
     max-width: 1366px;
   }
 
@@ -332,8 +330,12 @@ button {
     right: 142px;
   }
 
-  .header__burger {
-    margin-right: 42px;
+  .header__item:first-child {
+    margin-right: 26px;
+  }
+
+  .header__item:nth-last-child(2) {
+    margin-left: 26px;
   }
 
   .header__item:nth-child(3),
@@ -347,15 +349,7 @@ button {
   }
 
   .menu__points {
-    margin: 32px 0;
-  }
-
-  .menu__item:first-of-type {
-    margin-left: 24px;
-  }
-
-  .menu__item:last-of-type {
-    margin-right: 24px;
+    margin: 32px 24px;
   }
 
   .menu__points::after {
@@ -383,21 +377,26 @@ button {
 
   .section-block__image {
     margin-right: 40px;
-    max-width: 450px;
+    height: 208px;
+    width: 360px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
   }
 
-  .section-block__image img {
+  .section-block__img {
     border-radius: 6px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  body {
+  .page {
     max-width: 1120px;
+    margin: 0 auto;
   }
 
   .header__content {
     padding: 0;
+    height: 0;
   }
 
   .header__content::before,
@@ -405,66 +404,31 @@ button {
     display: none;
   }
 
+  .header__item:nth-child(6),
+  .header__item:nth-child(7) {
+    position: absolute;
+    z-index: 1;
+    top: 42px;
+  }
+
+  .header__item:nth-child(6) {
+    right: 232px;
+  }
+
+  .header__item:nth-child(7) {
+    right: 32px;
+  }
+
   .header__item:nth-child(-n + 5) {
     display: none;
   }
 
-  .header__repair {
-    position: absolute;
-    top: 42px;
-    right: 212px;
-  }
-
-  .header__repair::before {
-    content: "Оставить заявку";
-    position: absolute;
-    left: -130px;
-    width: 130px;
-  }
-
-  .header__status {
-    position: absolute;
-    top: 42px;
-    right: 32px;
-  }
-
-  .header__status::before {
-    content: "Статус ремонта";
-    position: absolute;
-    width: 125px;
-    left: -125px;
-  }
-
-  .header__status::before,
-  .header__repair::before {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 40px;
-    top: 0px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-weight: 500;
-    color: #1b1c21;
-    letter-spacing: -0.4px;
-    font-size: 16px;
-  }
-
-  .menu {
-    margin-top: 42px;
-  }
-
-  .menu__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  .icon__text {
+    display: inline;
   }
 
   .menu__title {
+    padding-top: 42px;
     margin-left: 32px;
     position: relative;
   }
@@ -473,23 +437,17 @@ button {
     left: -32px;
   }
 
-  .menu__points {
+  .menu__navigation {
     overflow: visible;
+  }
+
+  .menu__points {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 20px 32px 0 32px;
-  }
-
-  .menu__item:first-of-type,
-  .menu__item:last-of-type {
-    margin: 0;
-  }
-
-  .menu__point {
-    margin-bottom: 12px;
+    margin: 20px 32px 5px 32px;
+    row-gap: 10px;
   }
 
   .menu__points::after {
@@ -508,6 +466,7 @@ button {
 
   .section-block__image {
     margin-right: 28px;
-    width: 540px;
+    width: 531px;
+    height: 307px;
   }
 }

@@ -1,176 +1,100 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <!DOCTYPE html>
-    <html lang="ru">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/menu-style.css" />
-        <link rel="stylesheet" href="css/fonts.css" />
-        <title>Меню</title>
-      </head>
-      <body>
-        <div class="left-menu">
-          <header class="header">
-            <div class="header__content">
-              <button class="header__button-exit header__button"></button>
-              <img
-                class="header__logo"
-                src="assets/icons/Group.svg"
-                alt="Логотип компании"
-                width="97"
-                height="51"
-              />
-              <button class="header__button-search header__button"></button>
-            </div>
-          </header>
-          <section class="main">
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio1"
-                    name="nav-radio"
-                    checked
-                  />
-                  <label class="navigation__label" for="radio1"
-                    >Ремонт техники</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio2"
-                    name="nav-radio"
-                  />
-                  <label class="navigation__label" for="radio2"
-                    >Услуги и сервисы</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio3"
-                    name="nav-radio"
-                  />
-                  <label class="navigation__label" for="radio3"
-                    >Корпоративным клиентам</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio4"
-                    name="nav-radio"
-                  />
-                  <label class="navigation__label" for="radio4"
-                    >Продавцам техники</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio5"
-                    name="nav-radio"
-                  />
-                  <label class="navigation__label" for="radio5"
-                    >Партнерам</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio6"
-                    name="nav-radio"
-                  />
-                  <label class="navigation__label" for="radio6"
-                    >Производителям</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio7"
-                    name="nav-radio"
-                  />
-                  <label class="navigation__label" for="radio7"
-                    >Наши сервисные центры</label
-                  >
-                </li>
-                <li>
-                  <input
-                    class="navigation__radio"
-                    type="radio"
-                    id="radio8"
-                    name="nav-radio"
-                  />
-                  <label class="navigation__label" for="radio8">Контакты</label>
-                </li>
-              </ul>
-            </nav>
-          </section>
-          <footer class="footer">
-            <div class="footer__content">
-              <div class="footer__buttons">
-                <button
-                  class="footer__button-call header__button"
-                  aria-label="Звонок"
-                ></button>
-                <button
-                  class="footer__button-message header__button"
-                  aria-label="Обратная связь"
-                ></button>
-                <button
-                  class="footer__button-profile header__button"
-                  aria-label="Личный кабинет"
-                ></button>
-              </div>
-              <div class="footer__email">
-                <a href="mailto:mail@cps.com">mail@cps.com</a>
-              </div>
-              <div class="footer__phone-number">
-                <a href="tel:88008908900">8 800 890 8900</a>
-              </div>
-              <div class="footer__lang-buttons">
-                <input
-                  class="footer__lang-radio"
-                  type="radio"
-                  id="ru"
-                  name="lang-radio"
-                  checked
-                />
-                <label class="footer__lang-label" for="ru">RU</label>
-                <input
-                  class="footer__lang-radio"
-                  type="radio"
-                  id="en"
-                  name="lang-radio"
-                />
-                <label class="footer__lang-label" for="en">EN</label>
-                <input
-                  class="footer__lang-radio"
-                  type="radio"
-                  id="ch"
-                  name="lang-radio"
-                />
-                <label class="footer__lang-label" for="ch">CH</label>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </body>
-    </html>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/menu-style.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <title>Меню</title>
+</head>
+<body>
+  <div class="left-menu">
+    <header class="menu-header">
+      <ul class="menu-header__content">
+        <li class="menu-header__item">
+          <button class="icon">
+            <span class="icon__img">
+              <img src="assets/icons/exit.svg" alt="Закрыть">
+            </span>
+          </button>
+        </li>
+        <li class="menu-header__item">
+          <a class="logo" href="#">
+            <img src="assets/icons/Group.svg" alt="Логотип компании">
+          </a>
+        </li>
+        <li class="menu-header__item">
+          <button class="icon">
+            <span class="icon__img">
+              <img src="assets/icons/search.svg" alt="Поиск">
+            </span>
+          </button>
+        </li>
+      </ul>
+    </header>
+    <nav class="menu-nav">
+      <ul class="menu-nav__content">
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Ремонт техники</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Услуги и сервисы</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Корпоративным клиентам</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Продавцам техники</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Партнерам</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Производителям</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Наши сервисные центры</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__point" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <footer class="menu-footer">
+      <div class="menu-footer__content">
+        <ul class="menu-footer__buttons">
+          <li>
+            <button class="icon">
+              <span class="icon__img">
+                <img src="assets/icons/call.svg" alt="Звонок">
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="icon">
+              <span class="icon__img">
+                <img src="assets/icons/chat.svg" alt="Обратная связь">
+              </span>
+            </button>
+          </li>
+          <li>
+            <button class="icon">
+              <span class="icon__img">
+                <img src="assets/icons/profile.svg" alt="Личный кабинет">
+              </span>
+            </button>
+          </li>
+        </ul>
+        <a class="menu-footer__email" href="mailto:mail@cps.com">mail@cps.com</a>
+        <a class="menu-footer__phone" href="tel:88008908900">8 800 890 8900</a>
+        <ul class="menu-footer__lang-buttons">
+          <li><a class="menu-footer__lang-button" href="#">RU</a></li>
+          <li><a class="menu-footer__lang-button" href="#">EN</a></li>
+          <li><a class="menu-footer__lang-button" href="#">CH</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>

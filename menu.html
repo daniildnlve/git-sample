@@ -9,8 +9,8 @@
     <title>Меню</title>
   </head>
   <body>
-    <div class="left-menu">
-      <header class="menu-header">
+    <aside class="left-menu">
+      <div class="menu-header">
         <ul class="menu-header__content">
           <li class="menu-header__item">
             <button class="icon" aria-label="Закрыть">
@@ -32,38 +32,35 @@
             </button>
           </li>
         </ul>
-      </header>
-      <nav class="left-menu__navigation">
-        <div class="menu-nav">
-          <ul class="menu-nav__content">
+      </div>
+      <ul class="menu-nav left-menu__navigation">
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Ремонт техники</a>
+              <a class="menu-nav__link" href="#">Ремонт техники</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Услуги и сервисы</a>
+              <a class="menu-nav__link" href="#">Услуги и сервисы</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Корпоративным клиентам</a>
+              <a class="menu-nav__link" href="#">Корпоративным клиентам</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Продавцам техники</a>
+              <a class="menu-nav__link" href="#">Продавцам техники</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Партнерам</a>
+              <a class="menu-nav__link" href="#">Партнерам</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Производителям</a>
+              <a class="menu-nav__link" href="#">Производителям</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Наши сервисные центры</a>
+              <a class="menu-nav__link" href="#">Наши сервисные центры</a>
             </li>
             <li class="menu-nav__item">
-              <a class="menu-nav__point" href="#">Контакты</a>
+              <a class="menu-nav__link" href="#">Контакты</a>
             </li>
-          </ul>
-        </div>  
-      </nav>
-      <footer class="menu-footer">
+      </ul>
+      
+      <div class="menu-footer">
         <div class="menu-footer__content">
           <ul class="menu-footer__buttons">
             <li>
@@ -95,12 +92,12 @@
             >8 800 890 8900</a
           >
           <ul class="menu-footer__lang-buttons">
-            <li><a class="menu-footer__lang-button" href="#">RU</a></li>
-            <li><a class="menu-footer__lang-button" href="#">EN</a></li>
-            <li><a class="menu-footer__lang-button" href="#">CH</a></li>
+            <li><button class="menu-footer__lang-button">RU</button></li>
+            <li><button class="menu-footer__lang-button">EN</button></li>
+            <li><button class="menu-footer__lang-button">CH</button></li>
           </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+    </aside>
   </body>
 </html>

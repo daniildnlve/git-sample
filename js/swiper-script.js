@@ -1,26 +1,29 @@
-var x = window.matchMedia("(max-width: 767px)");
-function myFunction(x) {
-  if (x.matches) { 
-    const b__swiper = new Swiper('.brands__swiper', {
+var swiperMedia = window.matchMedia("(max-width: 767px)");
+
+function swiperInit(swiperMedia) {
+  if (swiperMedia.matches) { 
+    const brandsSwiper = new Swiper('.brands__swiper', {
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
       },
       spaceBetween: 16,
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       slidesOffsetAfter: 16,
       slidesOffsetBefore: 16,
     }); 
-  }
-} 
-myFunction(x);
+  } 
+}
+ 
+swiperInit(swiperMedia);
 
-var brands = document.querySelector('.brands__wrapper');
-var openButton = document.querySelector('.open-button');
+var brands = document.querySelector('.swiper-wrapper');
+var openButton = document.querySelector('.brands__button');
 
 openButton.addEventListener('click', function() {
     brands.classList.toggle('brands__wrapper--hidden');
     openButton.textContent = 'Скрыть';
-    openButton.classList.toggle('open-button--open');
+    openButton.classList.toggle('brands__button--open');
     if (brands.classList.contains('brands__wrapper--hidden')) {
       openButton.textContent = 'Показать все';
     }
